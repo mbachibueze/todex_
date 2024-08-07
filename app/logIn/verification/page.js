@@ -1,6 +1,7 @@
 import styles from "./page.module.css"
 import Image from "next/image";
 import Link from 'next/link';
+import { IoArrowBackSharp } from "react-icons/io5";
 
 import { FcGoogle } from "react-icons/fc";
 
@@ -9,38 +10,40 @@ export default function LogIn (){
   <div>
     <div className="p-4 text-white h-screen w-screen flex overflow-hidden bg-gray-100">
       <div className={styles.maincontainer}>
-        <div className="bg-white text-[#1b2450]  p-6  px-10 rounded-[10px] flex flex-col justify-center items-center gap-[40px] shadow-custom">
+        <div className="bg-white text-[#1b2450] w-[340px]  p-6  px-10 rounded-[10px] flex flex-col justify-center items-center gap-[40px] shadow-custom">
+          <div className="flex items-start w-full">
+            <Link href="/logIn"><IoArrowBackSharp size={16}/></Link>
+          </div>
           {/* Image */}
-          <div>
+          {/* <div>
             <Image
                     src="/images/tobex_logo.svg"
                     width={120} 
                     height={27}
                     />
-          </div>
+          </div> */}
 
           {/* Input */}
-          <div className="w-[250px] flex flex-col gap-6">
-            <input className="rounded-[5px] outline-none text-black p-4 text-sm bg-gray-300 w-full h-[30px] transition-width duration-500 font-normal "
-              placeholder="Username"
-                  />
-            <input className="rounded-[5px] outline-none text-black p-4 text-sm bg-gray-300 w-full h-[30px] transition-width duration-500 font-normal "
-              placeholder="Password"
-              type="password"
-            />
+          <Image
+                    src="/images/sent.png"
+                    width={190} 
+                    height={27}
+                    />
+
+          <div className="flex flex-col text-center items-center md:text-[8px] text-[12px]">
+            <p>A mail has been sent to jo**********@*****.com to confirm the validity of the email</p>
+            <p>Click Link in mail to validate </p>
           </div>
 
           {/* Button */}
-          <div className="w-full gap-1 flex flex-col items-center justify-center" >
-            <div className="bg-[#0641B6] text-white p-1 rounded-[50px] w-full text-center cursor-pointer font-semibold">
-            <Link href="/beeCode">Log In</Link>
+          <div className="w-full gap-3 flex flex-col items-center justify-center" >
+            <div className="bg-[#0641B6] text-white p-2 rounded-[50px] w-full text-center md:text-[14px] text-[15px] cursor-pointer font-semibold">
+            <Link href="/beeCode">Comfirm Email</Link>
             </div>
-            <div className="font-semibold">or</div>
-            <div className="bg-white border border-blue-700 text-black p-1 rounded-[50px] w-full text-center cursor-pointer font-normal flex items-center justify-center text-[14px] gap-3">
-               <FcGoogle/>
-               Continue with Google
+            <div className="flex text-[11px] justify-between w-full">
+              <div className="text-blue-600 underline cursor-pointer">Resend Code</div>
+              <div className="md:cursor-pointer">Use Phone instead</div>
             </div>
-            <div className="text-black text-[12px] hover:text-blue-500 transition-all duration-200" >Forgot Password?</div>
           </div>
         </div>
       </div>

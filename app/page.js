@@ -9,8 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return <>
-      <div className="overflow-hidden">
+    <div  className="flex justify-between">
+      <div className=""  >
         <LogIn/>
       </div>
+    </div>
     </>;
 }

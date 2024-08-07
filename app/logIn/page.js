@@ -33,7 +33,7 @@ export default function LogIn (){
           {/* Button */}
           <div className="w-full gap-1 flex flex-col items-center justify-center" >
             <div className="bg-[#0641B6] text-white p-1 rounded-[50px] w-full text-center cursor-pointer font-semibold">
-            <Link href="/beeCode">Log In</Link>
+            <Link href="/logIn/verification">Log In</Link>
             </div>
             <div className="font-semibold">or</div>
             <div className="bg-white border border-blue-700 text-black p-1 rounded-[50px] w-full text-center cursor-pointer font-normal flex items-center justify-center text-[14px] gap-3">
