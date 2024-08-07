@@ -1,0 +1,63 @@
+.shadow{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 #a2a2a2;
+}
+.filterShadow{
+
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 #a2a2a2;
+}
+
+
+.usersContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.detailColumn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr 0.5fr;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  cursor: pointer;
+}
+
+.action{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid white;
+  width: fit-content;
+  padding: 2px 6px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.action:hover{
+  color: #5385ea;
+  border: 1px solid #5385ea;
+}
+
+
+.main::-webkit-scrollbar, .col-pds::-webkit-scrollbar {
+  width: 4px;
+}
+
+.main::-webkit-scrollbar-track, .col-pds::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb, .col-pds::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb:hover .col-pds::-webkit-scrollbar-thumb:hover{
+  background: #555;
+}
