@@ -10,7 +10,7 @@ export default function LogIn (){
   <div>
     <div className="p-4 text-white h-screen w-screen flex overflow-hidden bg-gray-100">
       <div className={styles.maincontainer}>
-        <div className="bg-white text-[#1b2450] w-[340px]  p-6  px-10 rounded-[10px] flex flex-col justify-center items-center gap-[40px] shadow-custom">
+        <div className="bg-white text-[#1b2450] w-[340px] h-[500px] p-6  px-10 rounded-[10px] flex flex-col justify-between items-center gap-[40px] shadow-custom">
           <div className="flex items-start w-full">
             <Link href="/logIn"><IoArrowBackSharp size={16}/></Link>
           </div>
@@ -25,20 +25,20 @@ export default function LogIn (){
 
           {/* Input */}
           <Image
-                    src="/images/sent.png"
-                    width={190} 
+                    src="/images/email.png"
+                    width={150} 
                     height={27}
                     />
 
-          <div className="flex flex-col text-center items-center md:text-[8px] text-[12px]">
+          <div className="flex flex-col text-center items-center md:text-[8px] text-[11px]">
             <p>A mail has been sent to jo**********@*****.com to confirm the validity of the email</p>
             <p>Click Link in mail to validate </p>
           </div>
 
           {/* Button */}
           <div className="w-full gap-3 flex flex-col items-center justify-center" >
-            <div className="bg-[#0641B6] text-white p-2 rounded-[50px] w-full text-center md:text-[14px] text-[15px] cursor-pointer font-semibold">
-            <Link href="/beeCode">Comfirm Email</Link>
+            <div className="bg-[#0641B6] text-white p-2 rounded-[50px] w-full text-center md:text-[14px] text-[13px] cursor-pointer font-semibold">
+            <Link href="/logIn/otp">Confirm Email</Link>
             </div>
             <div className="flex text-[11px] justify-between w-full">
               <div className="text-blue-600 underline cursor-pointer">Resend Code</div>

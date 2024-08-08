@@ -17,7 +17,7 @@ import { RevenuePieChart } from "@components/revenuePieChart";
 
 
 export default function Dashboard () {
-  return <div className="p-4 text-[#1b2450] bg-white flex flex-col gap-[20px]">
+  return <div className="md:p-4  text-[#1b2450] bg-white flex flex-col gap-[20px]">
     <div className={styles.tnxContainer}> 
       {/* Start tabs */}
       <div className={styles.dashTab}>
