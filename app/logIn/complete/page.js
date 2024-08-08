@@ -35,7 +35,7 @@ export default function LogIn (){
 
           {/* Input */}
           <Image
-                    src="/images/done.svg"
+                    src="/images/done.png"
                     width={240} 
                     height={27}
                     />
